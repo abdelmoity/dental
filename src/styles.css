@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.text-header1{
+font-size: 20px;
+color:blue;
+font-weight:bold;	
+}
+
+.site-footer {
+  background: #fffff2;
+}
