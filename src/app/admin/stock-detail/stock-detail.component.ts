@@ -18,7 +18,7 @@ export class StockDetailComponent implements OnInit {
   }
 
    backtoStockslist() {
-    this.router.navigate(['/stocks']);
+    this.router.navigate(['admin/stocks']);
   }
 
 }

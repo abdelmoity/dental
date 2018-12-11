@@ -1,6 +1,6 @@
-<div class="container">
+<!-- <div class="container">
   <br>
-  <form class="center" method="POST">
+  <form class="center">
   <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
     <input id="email" type="text" class="form-control" name="userId" placeholder="رمز المستخدم">
@@ -11,7 +11,16 @@
     <input id="password" type="password" class="form-control" name="password" placeholder="كلمة المرور">
   </div>
   <br>
-  <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+  <button type="submit" class="btn btn-primary" (click)="login()" *ngIf="!authService.isLoggedIn">تسجيل الدخول</button>
+  <button type="submit" class="btn btn-primary" (click)="logout()" *ngIf="authService.isLoggedIn">تسجيل الخروج</button>
 </form>
+<p>{{message}}</p>
 </div>
+ -->
 
+ <h2>LOGIN</h2>
+<p>{{message}}</p>
+<p>
+  <button (click)="login()"  *ngIf="!authService.isLoggedIn">Login</button>
+  <button (click)="logout()" *ngIf="authService.isLoggedIn">Logout</button>
+</p>

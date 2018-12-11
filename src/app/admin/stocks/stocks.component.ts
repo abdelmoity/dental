@@ -15,7 +15,7 @@ export class StocksComponent implements OnInit {
   }
 
   goStockDetail() {
-    this.route.navigate(['/stock/:50']);
+    this.route.navigate(['admin/stock/:50']);
   }
 
 }

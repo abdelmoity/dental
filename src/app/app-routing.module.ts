@@ -4,7 +4,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterationComponent } from './registeration/registeration.component';
 import { TemplateBodyComponent } from './template-body/template-body.component';
 
+
 const routes: Routes = [
+  { path: 'admin', loadChildren: './admin/admin.module#AdminModule' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterationComponent },
   { path: 'home', component: TemplateBodyComponent },
